@@ -5,57 +5,42 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    color: #29241F;
-    background-color: #F8F5EF;
+    color: #22201D;
+    background-color: #FAF8F5;
   }
 
   body {
     @apply font-sans;
-    background-color: #F8F5EF;
-    color: #29241F;
+    background-color: #FAF8F5;
+    color: #22201D;
     overflow-x: hidden;
   }
 
   ::selection {
-    background-color: rgba(119, 59, 69, 0.15);
-    color: #773B45;
+    background-color: rgba(158, 101, 107, 0.18);
+    color: #9E656B;
   }
 }
 
-/* Subtle Editorial Scrollbar */
+/* Subtle Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #F8F5EF;
+  background: #FAF8F5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #DDD6CB;
+  background: #E8E2D9;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B58D8C;
+  background: #C8BEB2;
 }
 
-/* Minimalist hairline dividers */
-.editorial-border {
-  border-color: #DDD6CB;
-}
-
-.editorial-card {
-  background-color: #FFFFFF;
-  border: 1px solid #DDD6CB;
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.editorial-card:hover {
-  border-color: #773B45;
-}
-
-/* Print Styles for ATS/PDF */
+/* Print Styles */
 @media print {
   body {
     background: #ffffff !important;

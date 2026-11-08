@@ -14,7 +14,7 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 
 function App() {
-  // Editorial Scroll Progress Indicator (subtle hairline bar at the very top)
+  // Editorial Scroll Progress Line with dusty rose tone
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 90,
@@ -23,18 +23,18 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen bg-[#F8F5EF] text-[#29241F] font-sans relative selection:bg-[#773B45]/15 selection:text-[#773B45]">
+    <div className="min-h-screen bg-[#FAF8F5] text-[#22201D] font-sans relative selection:bg-[#9E656B]/15 selection:text-[#9E656B]">
       
-      {/* Editorial Scroll Progress Line */}
+      {/* Scroll Progress Line */}
       <motion.div
-        className="fixed top-0 left-0 right-0 h-[2px] bg-[#773B45] z-50 origin-left"
+        className="fixed top-0 left-0 right-0 h-[2px] bg-[#9E656B] z-50 origin-left"
         style={{ scaleX }}
       />
 
       {/* Navigation */}
       <Navbar />
 
-      {/* Main Editorial Content Sections */}
+      {/* Main Content Sections */}
       <main className="relative z-10">
         <Hero />
         <About />

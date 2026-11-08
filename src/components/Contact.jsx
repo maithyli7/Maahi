@@ -62,18 +62,18 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 sm:py-36 bg-[#EFEAE1]/40 border-t border-[#DDD6CB]">
+    <section id="contact" className="py-24 sm:py-36 bg-[#F3EFEA]/45 border-t border-[#E8E2D9]">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         
         {/* Section Header */}
         <div className="mb-16 sm:mb-24">
-          <span className="font-sans text-xs tracking-[0.25em] uppercase text-[#773B45] font-medium block mb-3">
+          <span className="font-sans text-xs tracking-[0.25em] uppercase text-[#9E656B] font-semibold block mb-3">
             07 / CONTACT
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#29241F] font-normal tracking-tight leading-[1.1] max-w-2xl mb-6">
+          <h2 className="font-serif text-3xl sm:text-5xl lg:text-6xl text-[#22201D] font-normal tracking-tight leading-[1.1] max-w-2xl mb-6">
             Let's create something meaningful.
           </h2>
-          <p className="font-sans text-base sm:text-lg text-[#77716A] leading-relaxed max-w-xl">
+          <p className="font-sans text-base sm:text-lg text-[#6B655E] leading-relaxed max-w-xl">
             Whether it's an interesting opportunity, a collaborative project, or simply a conversation about technology, I'd love to connect.
           </p>
         </div>
@@ -83,41 +83,41 @@ export const Contact = () => {
           
           {/* Coordinates (5 cols) */}
           <div className="lg:col-span-5 space-y-10">
-            <div className="bg-[#FFFFFF] p-8 border border-[#DDD6CB]">
-              <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[#773B45] font-semibold block mb-6 pb-3 border-b border-[#DDD6CB]">
+            <div className="bg-[#FFFFFF] p-8 border border-[#E8E2D9] shadow-[0_4px_20px_rgba(34,32,29,0.02)]">
+              <span className="font-sans text-[11px] tracking-[0.2em] uppercase text-[#9E656B] font-semibold block mb-6 pb-3 border-b border-[#E8E2D9]">
                 DIRECT CHANNELS
               </span>
 
               <div className="space-y-6 font-sans">
                 <div>
-                  <span className="text-[11px] tracking-[0.16em] uppercase text-[#77716A] block mb-1">
+                  <span className="text-[11px] tracking-[0.16em] uppercase text-[#6B655E] block mb-1">
                     Email
                   </span>
                   <a 
                     href={`mailto:${PERSONAL_INFO.email}`}
-                    className="text-base text-[#29241F] hover:text-[#773B45] transition-colors font-medium break-all"
+                    className="text-base text-[#22201D] hover:text-[#9E656B] transition-colors font-medium break-all"
                   >
                     {PERSONAL_INFO.email}
                   </a>
                 </div>
 
-                <div className="pt-4 border-t border-[#DDD6CB]/60">
-                  <span className="text-[11px] tracking-[0.16em] uppercase text-[#77716A] block mb-1">
+                <div className="pt-4 border-t border-[#E8E2D9]">
+                  <span className="text-[11px] tracking-[0.16em] uppercase text-[#6B655E] block mb-1">
                     Location
                   </span>
-                  <span className="text-base text-[#29241F] font-medium block">
+                  <span className="text-base text-[#22201D] font-medium block">
                     {PERSONAL_INFO.location}
                   </span>
                 </div>
               </div>
 
               {/* Social Buttons */}
-              <div className="pt-8 mt-8 border-t border-[#DDD6CB] flex flex-wrap gap-4">
+              <div className="pt-8 mt-8 border-t border-[#E8E2D9] flex flex-wrap gap-3">
                 <a
                   href={`mailto:${PERSONAL_INFO.email}`}
-                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.14em] uppercase bg-[#F8F5EF] text-[#29241F] border border-[#DDD6CB] hover:border-[#773B45] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.12em] uppercase bg-[#FAF8F5] text-[#22201D] border border-[#E8E2D9] hover:border-[#9E656B] hover:text-[#9E656B] transition-colors rounded-sm"
                 >
-                  <Mail className="w-3.5 h-3.5" />
+                  <Mail className="w-3.5 h-3.5 text-[#9E656B]" />
                   <span>EMAIL ME</span>
                 </a>
 
@@ -125,9 +125,9 @@ export const Contact = () => {
                   href={PERSONAL_INFO.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.14em] uppercase bg-[#F8F5EF] text-[#29241F] border border-[#DDD6CB] hover:border-[#773B45] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.12em] uppercase bg-[#FAF8F5] text-[#22201D] border border-[#E8E2D9] hover:border-[#9E656B] hover:text-[#9E656B] transition-colors rounded-sm"
                 >
-                  <BrandIcons.Linkedin className="w-3.5 h-3.5" />
+                  <BrandIcons.Linkedin className="w-3.5 h-3.5 text-[#5F7D8E]" />
                   <span>LINKEDIN</span>
                 </a>
 
@@ -135,9 +135,9 @@ export const Contact = () => {
                   href={PERSONAL_INFO.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.14em] uppercase bg-[#F8F5EF] text-[#29241F] border border-[#DDD6CB] hover:border-[#773B45] transition-colors"
+                  className="inline-flex items-center gap-2 px-4 py-2 text-xs font-sans tracking-[0.12em] uppercase bg-[#FAF8F5] text-[#22201D] border border-[#E8E2D9] hover:border-[#9E656B] hover:text-[#9E656B] transition-colors rounded-sm"
                 >
-                  <BrandIcons.Github className="w-3.5 h-3.5" />
+                  <BrandIcons.Github className="w-3.5 h-3.5 text-[#22201D]" />
                   <span>GITHUB</span>
                 </a>
               </div>
@@ -146,10 +146,10 @@ export const Contact = () => {
 
           {/* Minimalist Contact Form (7 cols) */}
           <div className="lg:col-span-7">
-            <form onSubmit={handleSubmit} className="bg-[#FFFFFF] p-8 sm:p-12 border border-[#DDD6CB] space-y-6">
+            <form onSubmit={handleSubmit} className="bg-[#FFFFFF] p-8 sm:p-12 border border-[#E8E2D9] space-y-6 shadow-[0_4px_20px_rgba(34,32,29,0.02)]">
               
               <div>
-                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#29241F] font-medium mb-2">
+                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#22201D] font-medium mb-2">
                   Name *
                 </label>
                 <input
@@ -159,12 +159,12 @@ export const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Your full name"
-                  className="w-full px-4 py-3 bg-[#F8F5EF] border border-[#DDD6CB] text-sm font-sans text-[#29241F] placeholder-[#77716A]/50 focus:outline-none focus:border-[#773B45] transition-colors"
+                  className="w-full px-4 py-3 bg-[#FAF8F5] border border-[#E8E2D9] text-sm font-sans text-[#22201D] placeholder-[#6B655E]/50 focus:outline-none focus:border-[#9E656B] transition-colors rounded-sm"
                 />
               </div>
 
               <div>
-                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#29241F] font-medium mb-2">
+                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#22201D] font-medium mb-2">
                   Email Address *
                 </label>
                 <input
@@ -174,12 +174,12 @@ export const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="your.email@organization.com"
-                  className="w-full px-4 py-3 bg-[#F8F5EF] border border-[#DDD6CB] text-sm font-sans text-[#29241F] placeholder-[#77716A]/50 focus:outline-none focus:border-[#773B45] transition-colors"
+                  className="w-full px-4 py-3 bg-[#FAF8F5] border border-[#E8E2D9] text-sm font-sans text-[#22201D] placeholder-[#6B655E]/50 focus:outline-none focus:border-[#9E656B] transition-colors rounded-sm"
                 />
               </div>
 
               <div>
-                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#29241F] font-medium mb-2">
+                <label className="block font-sans text-[11px] tracking-[0.16em] uppercase text-[#22201D] font-medium mb-2">
                   Message *
                 </label>
                 <textarea
@@ -189,20 +189,20 @@ export const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Share details regarding your opportunity or inquiry..."
-                  className="w-full px-4 py-3 bg-[#F8F5EF] border border-[#DDD6CB] text-sm font-sans text-[#29241F] placeholder-[#77716A]/50 focus:outline-none focus:border-[#773B45] transition-colors resize-y"
+                  className="w-full px-4 py-3 bg-[#FAF8F5] border border-[#E8E2D9] text-sm font-sans text-[#22201D] placeholder-[#6B655E]/50 focus:outline-none focus:border-[#9E656B] transition-colors resize-y rounded-sm"
                 />
               </div>
 
               {/* Status messages */}
               {status === 'success' && (
-                <div className="p-4 bg-[#F8F5EF] border border-[#773B45]/40 text-xs font-sans text-[#773B45] flex items-center gap-2">
+                <div className="p-4 bg-[#EEF3EF] border border-[#7A9283]/30 text-xs font-sans text-[#7A9283] flex items-center gap-2 rounded-sm">
                   <CheckCircle2 className="w-4 h-4 flex-shrink-0" />
                   <span>{statusMessage}</span>
                 </div>
               )}
 
               {status === 'error' && (
-                <div className="p-4 bg-[#F8F5EF] border border-rose-400 text-xs font-sans text-rose-800 flex items-center gap-2">
+                <div className="p-4 bg-[#F7EEF0] border border-[#9E656B]/30 text-xs font-sans text-[#9E656B] flex items-center gap-2 rounded-sm">
                   <AlertCircle className="w-4 h-4 flex-shrink-0" />
                   <span>{statusMessage}</span>
                 </div>
@@ -211,7 +211,7 @@ export const Contact = () => {
               <button
                 type="submit"
                 disabled={status === 'submitting'}
-                className="w-full sm:w-auto px-8 py-3.5 bg-[#773B45] text-[#FFFFFF] font-sans text-xs tracking-[0.18em] uppercase hover:bg-[#29241F] transition-colors duration-300 disabled:opacity-50 cursor-pointer"
+                className="w-full sm:w-auto px-8 py-3.5 bg-[#9E656B] text-[#FFFFFF] font-sans text-xs tracking-[0.18em] uppercase hover:bg-[#22201D] transition-colors duration-300 disabled:opacity-50 cursor-pointer shadow-[0_4px_16px_rgba(158,101,107,0.2)] rounded-sm"
               >
                 {status === 'submitting' ? 'SENDING...' : 'SEND INQUIRY'}
               </button>
