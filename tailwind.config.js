@@ -4,35 +4,28 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        darkBg: "#0B0D12",
-        darkSurface: "#121620",
-        darkCard: "#171C27",
-        textPrimary: "#F5F5F5",
-        textSecondary: "#A1A7B3",
-        accentPurple: "#A78BFA",
-        accentCyan: "#67E8F9",
+        bgPrimary: "#F8F5EF",
+        bgSecondary: "#EFEAE1",
+        bgWhite: "#FFFFFF",
+        textPrimary: "#29241F",
+        textSecondary: "#77716A",
+        accentBurgundy: "#773B45",
+        accentRose: "#B58D8C",
+        borderIvory: "#DDD6CB",
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        heading: ['Space Grotesk', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
+        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+        display: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"DM Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
-      animation: {
-        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-        'float': 'float 6s ease-in-out infinite',
-      },
-      keyframes: {
-        float: {
-          '0%, 100%': { transform: 'translateY(0px)' },
-          '50%': { transform: 'translateY(-12px)' },
-        }
+      letterSpacing: {
+        'luxury': '0.22em',
+        'subtle': '0.12em',
       }
     },
   },
   plugins: [],
 }
-

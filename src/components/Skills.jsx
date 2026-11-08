@@ -1,132 +1,62 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { 
-  Terminal, 
-  Binary, 
-  Database, 
-  Globe, 
-  Cloud, 
-  Cpu, 
-  ShieldCheck,
-  CheckCircle,
-  Sparkles
-} from 'lucide-react';
-import { SKILL_CATEGORIES } from '../data/portfolioData';
+import { SKILLS_DATA } from '../data/portfolioData';
 
-const iconMap = {
-  Terminal: Terminal,
-  Binary: Binary,
-  Database: Database,
-  Globe: Globe,
-  Cloud: Cloud,
-  Cpu: Cpu,
-  ShieldCheck: ShieldCheck
-};
-
-export const Skills = ({ darkMode }) => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
+export const Skills = () => {
   return (
-    <section id="skills" className="py-24 relative overflow-hidden">
-      {/* Glow effect */}
-      <div className="absolute right-0 top-1/3 w-80 h-80 bg-cyan-500/5 rounded-full blur-[120px] pointer-events-none" />
-
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section id="skills" className="py-24 sm:py-32 bg-[#F8F5EF]">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         
-        {/* Header */}
-        <div className="flex flex-col items-start mb-16">
-          <span className="text-xs uppercase tracking-[0.2em] font-mono text-cyan-400 font-semibold mb-2 flex items-center gap-2">
-            <span className="w-5 h-[1.5px] bg-cyan-400"></span>
-            SECTION 03
+        {/* Section Header */}
+        <div className="mb-16 sm:mb-24">
+          <span className="font-sans text-xs tracking-[0.25em] uppercase text-[#773B45] font-medium block mb-3">
+            02 / EXPERTISE
           </span>
-          <h2 className="text-3xl sm:text-5xl font-heading font-extrabold tracking-tight">
-            <span className={darkMode ? 'text-white' : 'text-gray-900'}>Technical </span>
-            <span className="bg-gradient-to-r from-purple-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
-              Skills Dashboard
-            </span>
+          <h2 className="font-serif text-3xl sm:text-5xl text-[#29241F] font-normal tracking-tight leading-tight max-w-2xl">
+            Tools, technologies & things I work with.
           </h2>
-          <p className={`mt-3 text-sm sm:text-base max-w-2xl ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-            Structured competencies across modern languages, system fundamentals, databases, cloud architecture, and physical computing.
-          </p>
         </div>
 
-        {/* Categories Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SKILL_CATEGORIES.map((cat, idx) => {
-            const Icon = iconMap[cat.icon] || Terminal;
-            const isSelected = selectedCategory === cat.name;
+        {/* Editorial Skill Rows */}
+        <div className="divide-y divide-[#DDD6CB] border-t border-b border-[#DDD6CB]">
+          {SKILLS_DATA.map((item, idx) => (
+            <motion.div
+              key={item.category}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ duration: 0.6, delay: idx * 0.05 }}
+              className="py-8 sm:py-10 grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-baseline group hover:bg-[#EFEAE1]/30 transition-colors px-2 sm:px-4"
+            >
+              {/* Category Title */}
+              <div className="md:col-span-4 flex items-center gap-3">
+                <span className="font-sans text-[11px] tracking-[0.2em] text-[#773B45] font-medium">
+                  0{idx + 1}
+                </span>
+                <h3 className="font-sans text-xs sm:text-sm tracking-[0.16em] uppercase text-[#29241F] font-medium group-hover:text-[#773B45] transition-colors">
+                  {item.category}
+                </h3>
+              </div>
 
-            return (
-              <motion.div
-                key={cat.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: idx * 0.08 }}
-                onClick={() => setSelectedCategory(isSelected ? null : cat.name)}
-                className={`p-6 rounded-2xl border transition-all duration-300 cursor-pointer ${
-                  darkMode
-                    ? isSelected 
-                      ? 'bg-[#171C27] border-purple-500/60 shadow-lg shadow-purple-500/10' 
-                      : 'bg-[#121620] border-white/10 hover:border-white/25 hover:bg-[#151a26]'
-                    : isSelected 
-                      ? 'bg-purple-50/80 border-purple-500 shadow-md' 
-                      : 'bg-white border-black/10 hover:border-black/20 hover:shadow-lg'
-                }`}
-              >
-                {/* Header of Card */}
-                <div className="flex items-center justify-between mb-5">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <div>
-                      <h3 className={`font-heading font-bold text-base ${darkMode ? 'text-white' : 'text-gray-900'}`}>
-                        {cat.name}
-                      </h3>
-                      <span className="text-[11px] font-mono text-gray-500">
-                        {cat.skills.length} core competencies
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Skill Badges */}
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {cat.skills.map((skill) => (
-                    <span
-                      key={skill}
-                      className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono transition-colors ${
-                        darkMode
-                          ? 'bg-[#1a2130] text-gray-200 border border-white/5 hover:border-purple-400/40 hover:text-cyan-300'
-                          : 'bg-gray-100 text-gray-800 border border-black/5 hover:border-purple-300 hover:text-purple-700'
-                      }`}
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </motion.div>
-            );
-          })}
-        </div>
-
-        {/* Engineering Philosophy Note */}
-        <div className={`mt-12 p-5 rounded-2xl border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono ${
-          darkMode ? 'bg-[#121620]/60 border-white/5 text-gray-400' : 'bg-white/80 border-black/5 text-gray-600'
-        }`}>
-          <div className="flex items-center gap-3">
-            <Sparkles className="w-4 h-4 text-purple-400" />
-            <span>Focused on depth of understanding and pragmatic implementation rather than arbitrary percentage ratings.</span>
-          </div>
-          <span className="text-cyan-400 font-semibold tracking-wide uppercase">
-            Practical Competency
-          </span>
+              {/* Skills List */}
+              <div className="md:col-span-8 flex flex-wrap gap-x-6 gap-y-2.5">
+                {item.skills.map((skill, sIdx) => (
+                  <span
+                    key={skill}
+                    className="font-serif text-lg sm:text-xl text-[#77716A] group-hover:text-[#29241F] transition-colors"
+                  >
+                    {skill}
+                    {sIdx < item.skills.length - 1 && (
+                      <span className="text-[#DDD6CB] ml-6 font-sans text-sm select-none">&bull;</span>
+                    )}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
         </div>
 
       </div>
     </section>
   );
 };
-

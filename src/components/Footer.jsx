@@ -1,92 +1,76 @@
 import React from 'react';
-import { Mail, ArrowUp, Heart, Code2 } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { BrandIcons } from './BrandIcons';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
-export const Footer = ({ darkMode }) => {
+export const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
-    <footer className={`border-t py-12 transition-colors ${
-      darkMode ? 'bg-[#0B0D12] border-white/10' : 'bg-gray-50 border-black/10'
-    }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="py-16 sm:py-20 bg-[#F8F5EF] border-t border-[#DDD6CB]">
+      <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-12">
         
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 pb-8 border-b border-white/5">
-          {/* Brand & Tagline */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="font-heading font-bold text-base tracking-tight bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                Maithyli Gajula
-              </span>
-              <span className="text-xs font-mono text-gray-500">/ 2026</span>
-            </div>
-            <p className={`text-xs font-mono ${darkMode ? 'text-gray-400' : 'text-gray-600'}`}>
-              Designed & Developed by Maithyli Gajula.
+        <div className="flex flex-col md:flex-row items-baseline justify-between gap-8 pb-12 border-b border-[#DDD6CB]">
+          
+          {/* Identity & Tagline */}
+          <div>
+            <h4 className="font-serif text-2xl sm:text-3xl text-[#29241F] tracking-wide mb-2">
+              {PERSONAL_INFO.name.toUpperCase()}
+            </h4>
+            <p className="font-serif italic text-base text-[#77716A]">
+              "Designed with curiosity. Built with intention."
             </p>
           </div>
 
-          {/* Social Links */}
-          <div className="flex items-center gap-4 text-xs font-mono">
+          {/* Social Links & Back to Top */}
+          <div className="flex flex-wrap items-center gap-6 font-sans text-xs tracking-[0.16em] uppercase">
             <a
               href={PERSONAL_INFO.github}
               target="_blank"
               rel="noreferrer"
-              className={`p-2 rounded-lg border transition-colors ${
-                darkMode ? 'border-white/10 text-gray-300 hover:text-cyan-300 hover:border-cyan-400/40' : 'border-black/10 text-gray-700 hover:text-purple-600'
-              }`}
-              aria-label="GitHub Profile"
+              className="text-[#77716A] hover:text-[#773B45] transition-colors"
             >
-              <BrandIcons.Github className="w-4 h-4" />
+              GITHUB
             </a>
 
             <a
               href={PERSONAL_INFO.linkedin}
               target="_blank"
               rel="noreferrer"
-              className={`p-2 rounded-lg border transition-colors ${
-                darkMode ? 'border-white/10 text-gray-300 hover:text-purple-300 hover:border-purple-400/40' : 'border-black/10 text-gray-700 hover:text-purple-600'
-              }`}
-              aria-label="LinkedIn Profile"
+              className="text-[#77716A] hover:text-[#773B45] transition-colors"
             >
-              <BrandIcons.Linkedin className="w-4 h-4" />
+              LINKEDIN
             </a>
 
             <a
               href={`mailto:${PERSONAL_INFO.email}`}
-              className={`p-2 rounded-lg border transition-colors ${
-                darkMode ? 'border-white/10 text-gray-300 hover:text-cyan-300 hover:border-cyan-400/40' : 'border-black/10 text-gray-700 hover:text-purple-600'
-              }`}
-              aria-label="Send Email"
+              className="text-[#77716A] hover:text-[#773B45] transition-colors"
             >
-              <Mail className="w-4 h-4" />
+              EMAIL
             </a>
 
             <button
               onClick={scrollToTop}
-              className={`px-3 py-2 rounded-lg border flex items-center gap-1.5 transition-colors ${
-                darkMode 
-                  ? 'border-white/10 text-gray-300 hover:text-white hover:bg-white/5' 
-                  : 'border-black/10 text-gray-700 hover:text-gray-900 hover:bg-black/5'
-              }`}
+              className="inline-flex items-center gap-1.5 text-[#29241F] hover:text-[#773B45] transition-colors cursor-pointer pl-4 border-l border-[#DDD6CB]"
             >
-              <ArrowUp className="w-3.5 h-3.5 text-purple-400" />
-              <span>Back to Top</span>
+              <span>TOP</span>
+              <ArrowUp className="w-3.5 h-3.5" />
             </button>
           </div>
+
         </div>
 
-        {/* Copyright notice */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-gray-500">
+        {/* Legal & Location */}
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 font-sans text-xs text-[#77716A]">
           <div>
-            &copy; 2026 Maithyli Gajula. All Rights Reserved.
+            &copy; 2026 Maithyli Gajula. All rights reserved.
           </div>
           <div className="flex items-center gap-2">
             <span>Visakhapatnam, India</span>
             <span>&bull;</span>
-            <span className="text-emerald-400">Available for Opportunities</span>
+            <span className="text-[#773B45]">Software Engineer &bull; MCA</span>
           </div>
         </div>
 

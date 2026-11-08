@@ -1,284 +1,229 @@
 export const PERSONAL_INFO = {
   name: "Maithyli Gajula",
-  role: "Aspiring Software Engineer | MCA Student | Developer",
-  headline: "Building Ideas Into Digital Experiences.",
-  subheadline: "I'm a Computer Science graduate pursuing my Master's in Computer Applications, passionate about software engineering, problem-solving, and building technology-driven solutions.",
-  statement: "I enjoy transforming ideas into meaningful digital solutions through technology, logical thinking, and continuous experimentation.",
+  shortName: "MAITHYLI",
+  roleTitle: "SOFTWARE ENGINEER / MCA",
+  heroSubtitle: "HELLO, I'M MAITHYLI.",
+  heroHeadline: "Technology, creativity & the art of building.",
+  heroDescription: "I'm a Computer Science graduate pursuing my Master's in Computer Applications, interested in software engineering, intelligent systems, and creating meaningful digital experiences.",
+  editorialCaption: "Curious mind. Creative thinker. Technology enthusiast.",
   location: "Visakhapatnam, India",
   email: "maithyligajula@gmail.com",
   phone: "7898140872",
-  github: "https://github.com/maithyligajula", // editable placeholder
-  linkedin: "https://linkedin.com/in/maithyligajula", // editable placeholder
+  github: "https://github.com/maithyli7",
+  linkedin: "https://linkedin.com/in/maithyligajula",
   status: "Open to Software Engineering Opportunities",
+  educationDegree: "MCA (2025–2027)",
+  undergradDegree: "B.Sc. Computer Science (2022–2025, GPA: 8.5/10)",
+  focus: "Software Engineering",
+  interests: "AI/ML, Cybersecurity, Cloud Computing, IoT"
 };
 
-export const HIGHLIGHT_CARDS = [
-  {
-    title: "Computer Science Graduate",
-    subtitle: "B.Sc. Computer Science (2022–2025)",
-    description: "Built strong fundamentals in data structures, algorithms, databases, and core software engineering concepts.",
-    icon: "GraduationCap"
-  },
-  {
-    title: "MCA Student (2025–2027)",
-    subtitle: "Aditya Degree & PG College",
-    description: "Deepening theoretical foundations in advanced computing, system architecture, and modern application development.",
-    icon: "BookOpen"
-  },
-  {
-    title: "Software Development Enthusiast",
-    subtitle: "Full Stack & Cloud",
-    description: "Passionate about crafting resilient web platforms with clean architecture and modern developer tooling.",
-    icon: "Code"
-  },
-  {
-    title: "Technology Explorer",
-    subtitle: "IoT & Emerging Tech",
-    description: "Hands-on builder bridging physical sensors with cloud services and intelligent automation.",
-    icon: "Cpu"
+export const ABOUT_CONTENT = {
+  sectionNum: "01 / ABOUT",
+  heading: "A little about the person behind the code.",
+  paragraphs: [
+    "I'm Maithyli, a Computer Science graduate currently pursuing my Master of Computer Applications.",
+    "My interest in technology comes from curiosity and the satisfaction of turning ideas into practical solutions.",
+    "From developing Django applications and exploring AWS cloud infrastructure to experimenting with IoT-based systems, I enjoy learning how different technologies work together.",
+    "Beyond development, I appreciate creativity, writing, reading, and exploring different cultures.",
+    "I believe that good technology is built through curiosity, thoughtful problem-solving, and continuous learning."
+  ],
+  panel: {
+    location: "Visakhapatnam, India",
+    education: "MCA (2025–2027)",
+    focus: "Software Engineering",
+    interests: "AI/ML, Cybersecurity, Cloud Computing"
   }
-];
+};
 
-export const SKILL_CATEGORIES = [
+export const SKILLS_DATA = [
   {
-    name: "Programming Languages",
-    icon: "Terminal",
+    category: "PROGRAMMING",
     skills: ["Python", "Java", "C", "JavaScript"]
   },
   {
-    name: "Core Computer Science",
-    icon: "Binary",
-    skills: ["Data Structures & Algorithms", "Object-Oriented Programming", "Database Management Systems", "Operating Systems"]
+    category: "CORE COMPUTER SCIENCE",
+    skills: ["Data Structures & Algorithms", "OOP", "DBMS", "Operating Systems"]
   },
   {
-    name: "Databases",
-    icon: "Database",
-    skills: ["SQL", "MySQL", "SQLite", "Database Normalization"]
-  },
-  {
-    name: "Web Development",
-    icon: "Globe",
+    category: "WEB DEVELOPMENT",
     skills: ["HTML", "CSS", "JavaScript", "Django"]
   },
   {
-    name: "Cloud Computing",
-    icon: "Cloud",
+    category: "DATABASES",
+    skills: ["SQL", "MySQL", "SQLite", "Database Normalization"]
+  },
+  {
+    category: "CLOUD",
     skills: ["AWS EC2", "AWS S3", "AWS IAM"]
   },
   {
-    name: "Internet of Things",
-    icon: "Cpu",
+    category: "INTERNET OF THINGS",
     skills: ["Arduino", "ESP32", "Sensor Integration"]
   },
   {
-    name: "Cybersecurity",
-    icon: "ShieldCheck",
+    category: "CYBERSECURITY",
     skills: ["Secure Coding", "Access Control", "Vulnerability Awareness"]
   }
 ];
 
-export const EXPERIENCES = [
+export const EXPERIENCE_DATA = [
   {
-    id: 1,
-    role: "AWS Cloud Computing Intern",
-    company: "Cloud Technologies Internship",
-    period: "Internship Period (Practical Training)",
+    id: "aws-cloud",
+    number: "01",
+    role: "AWS CLOUD COMPUTING INTERN",
     responsibilities: [
       "Deployed and managed AWS EC2 instances.",
-      "Worked with Amazon S3 storage for cloud data persistence.",
+      "Worked with Amazon S3 storage.",
       "Configured IAM access-control policies.",
-      "Gained practical exposure to distributed cloud environments and service communication."
+      "Explored distributed cloud environments and service communication."
     ],
-    technologies: ["AWS EC2", "AWS S3", "AWS IAM", "Cloud Architecture"]
+    technologies: ["AWS EC2", "Amazon S3", "AWS IAM", "Cloud Architecture"]
   },
   {
-    id: 2,
-    role: "Full Stack Web Development Intern",
-    company: "Web Development Internship",
-    period: "Internship Period (Practical Training)",
+    id: "full-stack",
+    number: "02",
+    role: "FULL STACK WEB DEVELOPMENT INTERN",
     responsibilities: [
-      "Developed responsive web applications using HTML, CSS, and JavaScript.",
+      "Developed responsive applications using HTML, CSS and JavaScript.",
       "Worked on backend integration.",
-      "Followed Software Development Life Cycle (SDLC) practices.",
-      "Participated in processes from requirements gathering to application deployment."
+      "Followed Software Development Life Cycle practices.",
+      "Participated in requirements gathering through application deployment."
     ],
-    technologies: ["HTML5", "CSS3", "JavaScript", "SDLC", "Backend Integration"]
+    technologies: ["HTML5", "CSS3", "JavaScript", "Backend Integration", "SDLC"]
   }
 ];
 
-export const PROJECTS = [
+export const PROJECTS_DATA = [
   {
     id: "velocityx",
-    title: "VelocityX — Smart Adaptive Speed Governance System",
-    category: "SIH 2026",
-    badge: "Smart India Hackathon",
-    shortDescription: "An innovative GPS and IoT-based speed governance solution designed to detect geographical zones, monitor vehicle speeds, and generate real-time alerts.",
-    fullDescription: "VelocityX tackles road safety and urban zone-based speed control. By coupling an ESP32 microcontroller with a precision GPS module, the system continually evaluates geographical geofences (such as school zones, hospitals, or high-risk highways) and regulates speed parameters in real time with audio-visual alerts and telemetry logs.",
-    technologies: ["ESP32", "GPS", "IoT", "Embedded Systems", "C++"],
-    keyFeatures: [
-      "GPS-based real-time geographical zone detection",
-      "Dynamic speed monitoring & threshold control",
-      "Instantaneous real-time auditory & LED alerts",
-      "Fully integrated ESP32 hardware prototype"
-    ],
-    github: "https://github.com/maithyligajula/velocityx-speed-governance", // editable placeholder
-    demo: null, // No fake live deployment
-    hasHardware: true,
-    accent: "purple"
+    number: "01",
+    title: "VELOCITYX",
+    subtitle: "Smart Adaptive Speed Governance System",
+    category: "SIH 2026 / IoT / Embedded Systems",
+    description: "A GPS and IoT-based speed governance solution designed to identify geographical zones, monitor vehicle speeds and generate real-time alerts.",
+    fullDetails: "VelocityX addresses roadway transit safety by combining microcontroller computation with precision geofencing. Interfacing an ESP32 microcontroller with a high-accuracy GPS module, the system continually evaluates geographical zones (such as school districts and hospitals), dynamically monitoring velocity thresholds and triggering instant alerts.",
+    technologies: ["ESP32", "GPS", "IoT", "Embedded Systems"],
+    github: "https://github.com/maithyli7/velocityx-speed-governance",
+    demo: null,
+    illustration: "iot-speed"
   },
   {
     id: "campussphere",
-    title: "CampusSphere — Campus Management Portal",
-    category: "Full Stack Web",
-    badge: "Django Portal",
-    shortDescription: "A Django-based campus management application featuring backend modules, database models, authentication, and role-based access control.",
-    fullDescription: "CampusSphere streamlines student and administrative workflows. The portal is architected using Django's Model-View-Template pattern with a normalized SQLite database backend, handling multi-role access control for faculty, students, and administrators with secure session handling.",
-    technologies: ["Python", "Django", "SQLite", "HTML/CSS", "Bootstrap"],
-    keyFeatures: [
-      "Backend modules structured with Django MVT architecture",
-      "Normalized relational database models",
-      "Custom authentication & role-based access control (RBAC)",
-      "Student & faculty administration workflows"
-    ],
-    github: "https://github.com/maithyligajula/campussphere-management-portal", // editable placeholder
+    number: "02",
+    title: "CAMPUSSPHERE",
+    subtitle: "Campus Management Portal",
+    category: "Full Stack Web / Django",
+    description: "A Django-based campus management application featuring backend modules, database models, authentication and role-based access control.",
+    fullDetails: "CampusSphere streamlines student administrative interactions and faculty administration workflows through an organized Django Model-View-Template architecture. Features relational models in SQLite, secure session management, and fine-grained role-based permissions.",
+    technologies: ["Python", "Django", "SQLite"],
+    github: "https://github.com/maithyli7/campussphere-management-portal",
     demo: null,
-    hasHardware: false,
-    accent: "cyan"
+    illustration: "django-portal"
   },
   {
     id: "vehicle-management",
-    title: "Vehicle Management System",
-    category: "Desktop & Database",
-    badge: "OOP & SQL",
-    shortDescription: "A vehicle and user management application featuring SQL-backed CRUD operations and object-oriented programming principles.",
-    fullDescription: "Built with rigorous adherence to OOP principles (encapsulation, abstraction, inheritance, polymorphism) and relational database design. It supports robust CRUD lifecycle operations for vehicle inventory, maintenance schedules, and user management with transaction safety.",
-    technologies: ["SQL", "OOP", "Database Management", "Python/Java"],
-    keyFeatures: [
-      "SQL-backed transactional CRUD operations",
-      "Modular Object-Oriented software architecture",
-      "Relational integrity and normalized database schema",
-      "User role validation and inventory tracking"
-    ],
-    github: "https://github.com/maithyligajula/vehicle-management-system", // editable placeholder
+    number: "03",
+    title: "VEHICLE MANAGEMENT SYSTEM",
+    subtitle: "Relational Vehicle Administration",
+    category: "Software Engineering / OOP",
+    description: "A vehicle and user management application implementing SQL-backed CRUD operations and object-oriented programming principles.",
+    fullDetails: "Built around core object-oriented principles—encapsulation, modular inheritance, and robust data abstraction. Integrates with relational SQL schemas ensuring complete transactional consistency for vehicle tracking, user maintenance, and inventory auditing.",
+    technologies: ["SQL", "OOP"],
+    github: "https://github.com/maithyli7/vehicle-management-system",
     demo: null,
-    hasHardware: false,
-    accent: "purple"
+    illustration: "database-oop"
   },
   {
     id: "smart-dustbin",
-    title: "Smart Dustbin Monitoring System",
-    category: "IoT Systems",
-    badge: "Smart Waste Solution",
-    shortDescription: "An IoT-based waste monitoring solution using ultrasonic sensors to monitor bin-level status and generate threshold alerts.",
-    fullDescription: "Designed for smart sanitation management. Uses an ultrasonic transceiver interfaced with an Arduino microcontroller to calculate fill percentages in real-time, triggering automatic alerts whenever the bin approaches capacity to prevent overflow.",
-    technologies: ["Arduino", "Ultrasonic Sensors", "IoT", "Embedded C"],
-    keyFeatures: [
-      "Ultrasonic distance calculation for fill capacity",
-      "Real-time threshold alert triggering",
-      "Automated servo flap control for touchless hygiene",
-      "Low-power embedded micro-controller deployment"
-    ],
-    github: "https://github.com/maithyligajula/smart-dustbin-monitoring", // editable placeholder
+    number: "04",
+    title: "SMART DUSTBIN MONITORING SYSTEM",
+    subtitle: "IoT Sanitation Alert Platform",
+    category: "IoT / Automation",
+    description: "An IoT-based waste monitoring solution using ultrasonic sensors to monitor bin levels and generate threshold alerts.",
+    fullDetails: "An automated hygiene and sanitation prototype engineered with an Arduino microcontroller. An ultrasonic transceiver measures container distance and volume metrics in real-time, raising threshold notifications to prevent urban waste overflow.",
+    technologies: ["Arduino", "Ultrasonic Sensors", "IoT"],
+    github: "https://github.com/maithyli7/smart-dustbin-monitoring",
     demo: null,
-    hasHardware: true,
-    accent: "cyan"
+    illustration: "ultrasonic-iot"
   },
   {
     id: "solar-tracking",
-    title: "Automatic Solar Tracking System",
-    category: "Renewable IoT",
-    badge: "Green Energy Prototype",
-    shortDescription: "An automated solar panel alignment system using dual LDR sensors and a servo motor to adjust panel positioning according to light intensity.",
-    fullDescription: "An embedded hardware solution maximizing photovoltaic power efficiency. Uses dual Light Dependent Resistors (LDRs) in a differential comparator circuit, continuously driving a high-torque servo motor to keep the solar panel perpendicular to sunlight throughout the day.",
-    technologies: ["Arduino", "LDR Sensors", "Servo Motor", "Hardware Prototyping"],
-    keyFeatures: [
-      "Dual-LDR differential light detection algorithm",
-      "Smooth servo motor angle repositioning",
-      "Continuous maximum solar radiation alignment",
-      "Energy-optimized micro-controller code"
-    ],
-    github: "https://github.com/maithyligajula/automatic-solar-tracking", // editable placeholder
+    number: "05",
+    title: "AUTOMATIC SOLAR TRACKING SYSTEM",
+    subtitle: "Renewable Hardware Prototype",
+    category: "Renewable Energy / Embedded",
+    description: "An automated solar panel alignment system using dual LDR sensors and a servo motor.",
+    fullDetails: "Maximizes photovoltaic capture throughout varying daylight cycles. Dual Light Dependent Resistors operate across a differential bridge, feeding real-time light intensity values into an Arduino controller that drives a positional servo motor to maintain perpendicular solar alignment.",
+    technologies: ["Arduino", "LDR Sensors", "Servo Motor"],
+    github: "https://github.com/maithyli7/automatic-solar-tracking",
     demo: null,
-    hasHardware: true,
-    accent: "purple"
+    illustration: "solar-tracker"
   }
 ];
 
-export const EDUCATION = [
+export const EDUCATION_DATA = [
   {
-    degree: "Master of Computer Applications (MCA)",
     institution: "Aditya Degree & PG College, Gopalapatnam",
-    period: "2025 – 2027",
+    degree: "MASTER OF COMPUTER APPLICATIONS",
+    period: "2025–2027",
     status: "Currently pursuing",
-    score: null,
-    highlights: "Focusing on advanced computing, distributed systems, software engineering methodologies, and intelligent systems."
+    details: "Advanced computing, distributed systems, software engineering methodologies, and intelligent architectures."
   },
   {
-    degree: "Bachelor of Science — Computer Science",
     institution: "Aditya Women's Degree College",
-    period: "2022 – 2025",
+    degree: "B.SC. COMPUTER SCIENCE",
+    period: "2022–2025",
     status: "Completed",
-    score: "GPA: 8.5 / 10",
-    highlights: "Comprehensive coursework in Data Structures, Object-Oriented Programming, Database Management, and Cloud fundamentals."
+    gpa: "GPA: 8.5/10",
+    details: "Foundational depth across algorithms, data structures, database normalization, and web technologies."
   },
   {
-    degree: "Intermediate — MPC (Mathematics, Physics, Chemistry)",
     institution: "Sri Chaitanya Junior College",
-    period: "2020 – 2022",
+    degree: "INTERMEDIATE — MPC",
+    period: "2020–2022",
     status: "Completed",
-    score: "GPA: 8.0 / 10",
-    highlights: "Rigorous analytical, mathematical reasoning and scientific fundamentals."
+    gpa: "GPA: 8.0/10",
+    details: "Mathematics, Physics, Chemistry curriculum emphasizing rigorous analytical and logical derivation."
   },
   {
-    degree: "Secondary School Certificate (SSC)",
     institution: "Bhashyam High School",
+    degree: "SSC",
     period: "2020",
     status: "Completed",
-    score: "GPA: 9.9 / 10",
-    highlights: "Top academic standing with exemplary focus on mathematics and science."
+    gpa: "GPA: 9.9/10",
+    details: "Secondary School Certificate with exemplary academic distinction across mathematics and scientific studies."
   }
 ];
 
-export const CERTIFICATIONS = [
-  { name: "C Programming", code: "CERT-C", category: "Programming" },
-  { name: "Java", code: "CERT-JAVA", category: "OOP & Systems" },
-  { name: "Python", code: "CERT-PY", category: "Scripting & Backend" },
-  { name: "DBMS & SQL", code: "CERT-DB", category: "Data Management" },
-  { name: "Cyber Security", code: "CERT-SEC", category: "Information Security" },
-  { name: "Data Structures & Algorithms", code: "CERT-DSA", category: "Core CS" }
+export const CERTIFICATIONS_DATA = [
+  { name: "C Programming", code: "CERT-C" },
+  { name: "Java", code: "CERT-JAVA" },
+  { name: "Python", code: "CERT-PY" },
+  { name: "DBMS & SQL", code: "CERT-DB" },
+  { name: "Cyber Security", code: "CERT-SEC" },
+  { name: "Data Structures & Algorithms", code: "CERT-DSA" }
 ];
 
-export const BEYOND_CODE = [
+export const BEYOND_CODE_DATA = [
   {
-    title: "Exploring Emerging Technologies",
-    description: "Following breakthrough innovations across generative models, edge AI computing, and cloud virtualization architectures.",
-    icon: "Sparkles"
+    title: "Writing and Reading",
+    description: "Appreciating literature, thoughtful essays, and clear technical documentation that articulates complex ideas simply."
   },
   {
-    title: "Learning About Different Cultures",
-    description: "Appreciating diverse viewpoints, regional histories, global languages, and multicultural collaboration in distributed teams.",
-    icon: "Compass"
+    title: "Creative Exploration",
+    description: "Observing design, minimalist typography, visual arts, and the quiet harmony between form and functional utility."
   },
   {
-    title: "Reading & Technical Writing",
-    description: "Distilling complex system engineering papers, technical documentation, and thought pieces to refine clarity of thought.",
-    icon: "BookOpen"
+    title: "Exploring Different Cultures",
+    description: "Understanding diverse worldviews, regional traditions, and communicative nuances that enrich international collaboration."
+  },
+  {
+    title: "Learning Emerging Technologies",
+    description: "Continually staying curious about breakthroughs in intelligent systems, machine learning architectures, and edge computing."
   },
   {
     title: "Creative Problem-Solving",
-    description: "Approaching logic puzzles, algorithmic challenges, and system bottlenecks with a clean, structured experimental mindset.",
-    icon: "Lightbulb"
-  },
-  {
-    title: "Exploring AI & Cybersecurity",
-    description: "Investigating defensive security paradigms, ethical access controls, and how machine learning can safeguard modern digital infrastructure.",
-    icon: "ShieldAlert"
+    description: "Approaching engineering obstacles not as rigid roadblocks, but as thoughtful puzzles requiring patience and structured intuition."
   }
 ];
-
-export const LANGUAGES_SPOKEN = [
-  { language: "English", proficiency: "Proficient" },
-  { language: "Telugu", proficiency: "Native" },
-  { language: "Hindi", proficiency: "Advanced" }
-];
-
